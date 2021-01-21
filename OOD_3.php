@@ -53,23 +53,21 @@ return $this->pounds;
     $this->exchange_rate=$exchange_rate;
     $this->pounds=$pounds;
   }
-  
+
   public function print()
   {
-  echo "Euros: $this->euros <br>";
-  echo "Exchange_rate: $this->exchange_rate <br>";
-  echo "Pounds: ".$this->getPounds()."<br>";
+    echo "Euros: " . $this->getEuros();
+    echo "<br>";
+    echo "Exchange_rate: " . $this->getExchange_rate();
+    echo "<br>";
+    echo "Pounds: " . $this->getPounds();
+    echo "<br>";
   }
 }
 
-$guiem = new Currency_converter('12', '0,5', '6');
+$var_1 = new Currency_converter('12', '0,5', '6');
+    $var_1->print();
 
-echo "Euros: " . $guiem->getEuros();
-echo "<br>";
-echo "Exchange_rate: " . $guiem->getExchange_rate();
-echo "<br>";
-echo "Pounds: " . $guiem->getPounds();
-echo "<br>";
 
 
 
